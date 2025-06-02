@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="navbar">
+            <div class="element-one"></div>
+            <div class="element-two"></div>
+            <div class="element-three"></div>
+            <div class="element-four"></div>
+            <!-- Add navbar content if needed -->
+        </header>
+
+        <div class="wrapper">
+            <div class="logo-image">
+                <div class="logo">logo</div>
+                <div class="image">image</div>
+            </div>
+
+            <main class="main-wrapper">
+                <h1>Registration Form</h1>
+                <form action="#" method="post" enctype="multipart/form-data">
+                    <section class="input-box name-father">
+                        <div class="your-name">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="father-name">
+                            <label for="fathername">Father's Name:</label>
+                            <input type="text" id="fathername" name="fathername" placeholder="Enter your Father's Name"
+                                required>
+                        </div>
+                    </section>
+
+                    <section class="input-box dob-nationality">
+                        <div class="your-dob">
+                            <label for="dob">Date of Birth:</label>
+                            <input type="date" id="dob" name="dob" required>
+                        </div>
+                        <div class="your-nationality">
+                            <label for="nationality">Nationality:</label>
+                            <input type="text" id="nationality" name="nationality" placeholder="Enter your nationality"
+                                required>
+                        </div>
+                    </section>
+
+                    <section class="input-box">
+                        <label for="your-address">Address:</label>
+                        <textarea name="address" id="your-address" rows="1" cols="30"
+                            placeholder="Enter your address"></textarea>
+                    </section>
+
+                    <section class="input-box">
+                        <div class="phone-email">
+                            <div class="phone">
+                                <label for="your-phone">Phone:</label>
+                                <input type="tel" id="your-phone" name="phone" placeholder="Enter your phone number"
+                                    required>
+                            </div>
+                            <div class="email">
+                                <label for="your-email">Email:</label>
+                                <input type="email" id="your-email" name="email" placeholder="Enter your email"
+                                    required>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section class="input-box gender-blood">
+                        <div class="genders">
+                            <label>Gender:</label>
+                            <div class="male">
+                                <input type="radio" id="male" name="gender" value="Male" required>
+                                <label for="male">Male</label>
+                            </div>
+                            <div class="female">
+                                <input type="radio" id="female" name="gender" value="Female" required>
+                                <label for="female">Female</label>
+                            </div>
+                        </div>
+                        <div class="bloodgroup-options">
+                            <label for="bloodgroup">BloodGroup:</label>
+                            <select name="bloodgroup" id="bloodgroup" required>
+                                <option value="" disabled selected>Select Blood Group</option>
+                                <option value="A+">A+</option>
+                                <option value="A-">A-</option>
+                                <option value="B+">B+</option>
+                                <option value="B-">B-</option>
+                                <option value="O+">O+</option>
+                                <option value="O-">O-</option>
+                                <option value="AB+">AB+</option>
+                                <option value="AB-">AB-</option>
+                            </select>
+                        </div>
+                    
+                    </section>
+
+                    <section class="information input-box">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eligendi deleniti magni nulla
+                            totam ullam veritatis necessitatibus perspiciatis fuga libero voluptatem aspernatur quis
+                            praesentium nemo laudantium repellat cupiditate omnis, placeat est odio ipsam accusamus
+                            itaque? Ea similique voluptatibus iure perferendis sit. Consequatur minima sit ratione
+                            molestiae unde eum dicta quos nesciunt tenetur doloribus esse sint, fuga suscipit? Corrupti,
+                            est voluptatibus. Placeat vel iste in aperiam tenetur odio, alias quia. Voluptatem!</p>
+                    </section>
+
+                    <section class="input-box signature">
+                        <div class="parent-principal">
+                            <div class="parent">
+                                <label for="parent-signature">Parent Signature:</label>
+                                <input type="file" id="parent-signature" name="parent-signature" accept="image/*"
+                                    required>
+                            </div>
+                            <div class="principal">
+                                <label for="principal-signature">Principal Signature:</label>
+                                <input type="file" id="principal-signature" name="principal-signature" accept="image/*"
+                                    required>
+                            </div>
+                        </div>
+                    </section>
+
+                    <hr>
+
+                    <h2>For Office Use</h2>
+
+                    <section class="input-box name-father">
+                        <div class="your-name">
+                            <label for="office-name">Name:</label>
+                            <input type="text" id="office-name" name="office-name" placeholder="Enter your name"
+                                required>
+                        </div>
+                        <div class="father-name">
+                            <label for="office-fathername">Father's Name:</label>
+                            <input type="text" id="office-fathername" name="office-fathername"
+                                placeholder="Enter your Father's Name" required>
+                        </div>
+                    </section>
+
+                    <section class=" input-box">
+                        <div class="dob-joining">
+                            <div class="your-dob">
+                                <label for="office-dob">Date of Birth:</label>
+                                <input type="date" id="office-dob" name="office-dob" required>
+                            </div>
+                            <div class="joining-date">
+                                <label for="joining-date">Date of Joining:</label>
+                                <input type="text" id="joining-date" name="joining-date"
+                                    placeholder="Enter joining date" required>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="input-box">
+                        <label for="office-address">Address:</label>
+                        <textarea name="office-address" id="office-address" rows="1" cols="30"
+                            placeholder="Enter address"></textarea>
+                    </section>
+
+                    <section class="input-box">
+                        <div class="phone-program">
+                            <div class="phone"><label for="office-phone">Phone:</label>
+                                <input type="tel" id="office-phone" name="office-phone" placeholder="Enter phone number"
+                                    required>
+                            </div>
+
+                            <div class="program">
+                                <label for="program">Program:</label>
+                                <input type="text" id="program" name="program" placeholder="Enter program name"
+                                    required>
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="form-submit">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>
